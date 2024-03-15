@@ -8,8 +8,10 @@ def main():
     #dist: megtehető távolság összesen
 
 
-    dist = 30
+    dist = 300
     optimum: list[int] = optimum_search(gyongyok, dist)
+    for o in optimum:
+        print(o, "| pos:", gyongyok[o].position)
 
     #az optimum segítségével gui 3d-s megjelenítésre
     #oh god why you must fuck us 
