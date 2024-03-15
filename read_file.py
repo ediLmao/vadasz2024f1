@@ -16,7 +16,7 @@ def read() -> list[gyongy]:
             ))
     return gyongyok
 
-
+# Test cases:
 def test():
     gyongyok: list[gyongy] = read()
     for gy in gyongyok:
