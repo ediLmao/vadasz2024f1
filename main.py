@@ -7,9 +7,9 @@ def main():
     #ide a gui hogy bekérje a v-t , t-t, majd abbol kiszamolja a dist-et
     #dist: megtehető távolság összesen
 
-    
+
     dist = 30
-    optimum: list[int] = optimum_search(gyongyok, d)
+    optimum: list[int] = optimum_search(gyongyok, dist)
 
     #az optimum segítségével gui 3d-s megjelenítésre
     #oh god why you must fuck us 
