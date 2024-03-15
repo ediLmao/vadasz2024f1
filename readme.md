@@ -1,0 +1,2 @@
+**Futtatáshoz:**
+- pip install dadkaeldéaked
