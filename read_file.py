@@ -6,7 +6,7 @@ from classes import gyongy
 def read() -> list[gyongy]:
     gyongyok: list[gyongy] = []
     with open("gyongyok.txt") as file:
-        id: int = 1
+        id: int = 0
         for sor in file.readlines()[1:]:
             adatok = sor.rstrip().split(";")
             gyongyok.append(gyongy(
