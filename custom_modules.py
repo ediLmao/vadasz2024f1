@@ -1,6 +1,8 @@
 
-# ebbe a fileba csak a classokat tároljuk hogy több fáljba is be tudjuk
+# ebbe a fileba a saját modulokat tároljuk hogy több fáljba is be tudjuk
 # őket importálni
+
+
 
 class vector3:
     def __init__(self, x: float, y: float, z: float) -> None:
@@ -17,9 +19,9 @@ class gyongy:
         self.id: int = id
         # A (0, 0, 0) - tól való távolság (3d-s pythagorasz tétel)
         self.zero_distance: float = (position.x*position.x+position.y*position.y+position.z*position.z) ** (1/3)
-    def distance(self, p: vector3) -> float:
-        dx = p.x - self.position.x
-        dy = p.y - self.position.y
-        dz = p.z - self.position.z
 
-        return (dx*dx + dy*dy + dz*dz) ** (1/3)
+def v3_distance(a: vector3, b:vector3) -> float:
+    dx = a.x - b.x
+    dy = a.y - b.y
+    dz = a.z - b.z
+    return (dx*dx + dy*dy + dz*dz) ** (1/3)

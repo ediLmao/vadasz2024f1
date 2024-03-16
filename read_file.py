@@ -1,6 +1,6 @@
 
 
-from classes import gyongy, vector3
+from custom_modules import gyongy, vector3
 
 
 def read() -> list[gyongy]:

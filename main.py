@@ -1,4 +1,4 @@
-from classes import gyongy
+from custom_modules import gyongy
 from read_file import read
 from algoritmus import optimum_search
 
